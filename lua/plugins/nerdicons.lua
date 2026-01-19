@@ -10,6 +10,8 @@ return {
       max_recents = 30, -- Configure recent icons limit
       add_default_keybindings = true, -- Add default keybindings
       copy_to_clipboard = false, -- Copy glyph to clipboard instead of inserting
+      notify = false,
+      notifier = { enabled = false },
     },
   },
 }

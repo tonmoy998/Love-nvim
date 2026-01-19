@@ -15,7 +15,7 @@ set tabstop=8
 set shiftwidth=2
 set softtabstop=2
 set clipboard=unnamedplus
-set nowrap
+set wrap
 " Remap j to move down
 " Remap k to move up
 set smarttab
@@ -63,10 +63,12 @@ keymap("n", "<C-s>", ":w!<CR>", opts)
 keymap("n", "<c-t>", ":terminal<CR>", opts)
 keymap("n", "<leader>c", ":VCoolor<CR>", opts)
 keymap("n", "<leader>vc", ":%d<CR>", opts)
-keymap("n", "<leader>fc", ":FzfLua colorschemes<CR>", opts)
-keymap("n", "<leader>fw", ":FzfLua live_grep<CR>", opts)
+-- keymap("n", "<leader>R", ":source ~/.config/nvim/init.lua<CR>", opts)
+-- keymap("n", "<leader>fc", ":FzfLua colorschemes<CR>", opts)
+-- keymap("n", "<leader>fw", ":FzfLua live_grep<CR>", opts)
 keymap("n", "<leader>fi", ":Nerdy<CR>", opts)
-keymap("n", "<leader><space>", ":FzfLua files<CR>", opts)
+keymap("n", "<leader>lr", ":Lazy reload Runner", opts)
+-- keymap("n", "<leader><space>", ":FzfLua files<CR>", opts)
 
 -- "Emmet setting
 -- autocmd FileType html autocmd BufWritePre <buffer> call HtmlBeautify()
